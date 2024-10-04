@@ -1,5 +1,3 @@
-package br.com.buscaCEP.excecoes;
-
 public class ErroCEPComMaisDeOitoDigitos extends RuntimeException {
     private String mensagem;
 

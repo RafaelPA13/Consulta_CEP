@@ -1,12 +1,4 @@
-package br.com.bucaCEP.api;
-import br.com.buscaCEP.excecoes.ErroCEPComMaisDeOitoDigitos;
-
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import java.io.FileWriter;
-import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -22,7 +14,7 @@ public class API {
         this.url = url + cep + "/json/";
     }
 
-    //Requisição com br.com.bucaCEP.api.API
+    //Requisição com API
     public void requisicao() {
         try {
             HttpClient client = HttpClient.newHttpClient();
